@@ -14,6 +14,7 @@ const App = (props) => {
   return (
     <Router>
     <React.Fragment>
+      <Route path="/navbar" render={navbar} />
       <Route exact path="/" render={Home} />
       <Route exact path="/movies" render={movies} />
       <Route exact path="/directors" render={directors} />
