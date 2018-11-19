@@ -5,7 +5,7 @@ const Directors = () => {
   return (
     <div>
     <h1>Directors Page</h1>
-    {directors.map((movie, index) => {
+    {directors.map((director, index) => {
       <div key={index}>
       <li>{director.name}</li>
 
