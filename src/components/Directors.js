@@ -1,24 +1,23 @@
 import React from 'react';
-import { movies } from '../data';
+import { directors } from '../data';
 
-const Movies = () => {
+const Directors = () => {
   return (
     <div>
-      <h1>Movies Page</h1>
-      {movies.map((movie, index) => (
+      <h1>Directors Page</h1>
+      {directors.map((director, index) => (
           <div key={index}>
-              <h3>Name: {movie.title}</h3>
-              <p>Time: {movie.time}</p>
-              <p>Genres:</p>
+              <h3>Name: {director.name}</h3>
+              <p>Movies:</p>
               <ul>
-                  {movie.genres.map((genre, index) => (
-                      <li key={index}>{genre}</li>
+                  {director.movies.map((movie, index) => (
+                      <li key={index}>{movie}</li>
                   ))}
               </ul>
           </div>
       ))}
     </div>
   );
-};
+}
 
-export default Movies;
+export default Directors
